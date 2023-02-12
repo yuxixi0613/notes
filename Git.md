@@ -261,7 +261,9 @@ git update-index --no-skip-worktree go.mod
 
 ### 查看分支
 
-- `git branch`可以查看所有的分支
+- `git branch`查看本地所有的分支
+- `git branch -a`查看本地、远程所有的分支
+- `git branch -vv`查看本地和远程分支的映射关系
 - 在当前分支的前面会有一个`*`
 - 在git中，有一个特殊指针`HEAD`,永远会指向当前分支
 
@@ -433,7 +435,7 @@ git remote show xx (xx为远程地址的别名) 显示某个远程仓库的信�
 git remote add [name] [url]  作用是添加远程版本库
 git remote rm [name]    删除远程仓库
 git remote rename [old_name] [new_name]   修改仓库名
-git remote set-url [name] https://github.com/yuxixi0613/notes.git
+git remote set-url [name] https://github.com/yuxixi0613/notes.git	设置名称的链接
 
 ```
 
